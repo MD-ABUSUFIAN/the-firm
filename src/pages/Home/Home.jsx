@@ -7,6 +7,7 @@ import Solution from '../../components/PerfectSolution/Solution';
 import Branding from '../../components/ReasonBranding/Branding';
 import CaseStudies from '../../components/CaseStudies/CaseStudies';
 import Blogs from '../../components/Blogs/Blogs';
+import Testimonial from '../../components/Testimonial/Testimonial';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <Branding/>
         <CaseStudies/>
         <Blogs/>
+        <Testimonial/>
         </div>
     );
 };
