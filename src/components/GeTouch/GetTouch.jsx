@@ -5,8 +5,10 @@ import Button from '../CommonComponent/Button';
 
 const GetTouch = () => {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   return (
-    <div className='relative'>
+    <div className='relative mb-[300px]'>
       <div className="getTouchTop  ">
         <img className="w-full h-[396px]" src={map} alt="" />
       </div>
@@ -34,8 +36,8 @@ const GetTouch = () => {
               <input
                 className="w-full border-0 outline-0 text-2xl cursor-pointer"
                 type="email"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="border-b-2 border-gray-300 w-[90%]">
@@ -44,19 +46,21 @@ const GetTouch = () => {
               <input
                 className="w-full border-0 outline-0 text-2xl cursor-pointer"
                 type="number"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="border-b-2 border-gray-300 w-[90%]">
-              <label className="text-[#A5A5A5]">Name </label>
+              <label className="text-[#A5A5A5]">Choose your subject </label>
               <br />
-              <input
-                className="w-full border-0 outline-0 text-2xl cursor-pointer"
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+           <select className='w-full text-lg font-semibold'>
+           <option value="">Select</option>
+           <option value="MERN Stack">MERN Stack</option>
+           <option value="MERN Stack">Front-End</option>
+           <option value="MERN Stack">Back-End</option>
+           <option value="MERN Stack">UI/UX</option>
+           <option value="MERN Stack">Graphic Design</option>
+           </select>
             </div>
           </div>
           <div className="text-center pt-10">

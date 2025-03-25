@@ -9,6 +9,7 @@ import CaseStudies from '../../components/CaseStudies/CaseStudies';
 import Blogs from '../../components/Blogs/Blogs';
 import Testimonial from '../../components/Testimonial/Testimonial';
 import GetTouch from '../../components/GeTouch/GetTouch';
+import Footer from '../../components/Footer/Footer';
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Blogs/>
         <Testimonial/>
         <GetTouch/>
+        <Footer/>
         </div>
     );
 };
