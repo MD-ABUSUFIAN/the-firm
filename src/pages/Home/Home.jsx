@@ -8,6 +8,7 @@ import Branding from '../../components/ReasonBranding/Branding';
 import CaseStudies from '../../components/CaseStudies/CaseStudies';
 import Blogs from '../../components/Blogs/Blogs';
 import Testimonial from '../../components/Testimonial/Testimonial';
+import GetTouch from '../../components/GeTouch/GetTouch';
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <CaseStudies/>
         <Blogs/>
         <Testimonial/>
+        <GetTouch/>
         </div>
     );
 };
