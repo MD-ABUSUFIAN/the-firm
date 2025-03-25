@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Details = ({details}) => {
+const Details = ({details,style}) => {
     return (
         <div>
-            <p>{details}</p>
+            <p className= {`text-[18px] ${style}`}>{details}</p>
         </div>
     );
 };

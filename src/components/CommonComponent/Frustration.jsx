@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaQuestion } from 'react-icons/fa';
-import frustuctionImg from '../assets/images/HomePage/fustructionBanner.png';
-import overlay from '../assets/images/HomePage/frustractionBannerLayer.png'
-import CommonBannerImage from './CommonComponent/CommonBannerImage';
-import CommonBannerContent from './CommonComponent/CommonBannerContent';
+import frustuctionImg from '../../assets/images/HomePage/fustructionBanner.png';
+import overlay from '../../assets/images/HomePage/frustractionBannerLayer.png'
+import CommonBannerImage from './CommonBannerImage';
+import CommonBannerContent from './CommonBannerContent';
 
 
 
@@ -27,9 +27,9 @@ const Frustration = () => {
         }
     ]
     return (
-        <div className='bg-gray_color py-[90px]'>
+        <div className='bg-gray_color py-[90px] container mx-auto'>
             
-            <div className="bannerWrapper container mx-auto  flex justify-between items-center">
+            <div className="bannerWrapper flex justify-between items-center">
                 <div className="bannerLeftContent w-1/2 flex flex-col justify-items-start">
                 <CommonBannerContent title={"Frustration of Clients"} details={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"}/>
                 <ul>
@@ -39,12 +39,12 @@ const Frustration = () => {
                     
                 </ul>
                 </div>
-                <div className="bannerRightImage  relative ">
+                <div className="bannerRightImage w-1/2  relative ">
                    <div >
                    <CommonBannerImage image={frustuctionImg}  />
                    </div>
                     
-                        <img className="overlay absolute right-[6%] top-[70%]  " src={overlay} alt="" />
+                        <img className="overlay absolute left-[32%] top-[70%]  " src={overlay} alt="" />
                    
                   
                 </div>
