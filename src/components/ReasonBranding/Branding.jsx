@@ -29,7 +29,7 @@ const Branding = () => {
           <div className="btns">
             <Button
               content={'Market Research'}
-              style={'shadow text-gray-300'}
+              style={'shadow text-gray-300 hover:text-white'}
             />
             <div className="btnOverlay"></div>
           </div>
